@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    padding-top: 55px;
+    margin: 0;
+}
+
+.hero-braga {
+    position: relative;
+    min-height: 65vh;
+    overflow: hidden; /* Ořízne případné přesahy obrázku */
+    background-color: #000; /* Černé pozadí jako pojistka pro ztmavení */
+}
+
+/* Styl pro obrázek v HTML */
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Roztáhne a ořízne fotku bez deformace */
+    opacity: 0.5; /* Ztmaví fotku, aby byl bílý text perfektně čitelný */
+    z-index: 0;
+}
+
+/* Kontejner mřížky */
+.cards-grid {
+    display: grid;
+    /* Vytvoří 3 stejně široké sloupce */
+    grid-template-columns: repeat(3, 1fr);
+    /* Mezera mezi kartami (nahoře, dole, vlevo, vpravo) */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card-item {
+    position: relative; /* Nutné pro absolutní pozicování obrázku uvnitř */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    text-decoration: none;
+    border-radius: 12px; /* Zaoblení rohů karet */
+    overflow: hidden;    /* Ořízne přesahující fotku v rozích */
+    background-color: #000; /* Pojistné černé pozadí */
+}
+.card-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Chová se stejně jako background-size: cover */
+    filter: brightness(0.65); /* Ztmaví fotku pro dobrou čitelnost bílého textu */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+.card-text {
+    position: relative;
+    z-index: 2; /* Udrží text nad obrázkem */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Efekt zvětšení fotky při najetí myší */
+.card-item:hover .card-bg-img {
+    transform: scale(1.05);
+    filter: brightness(0.55);
+}
+.section-title {
+    text-align: center;
+    /* Vycentruje text uvnitř 100% širokého nadpisu */
+    margin-bottom: 30px;
+    /* Přidá mezeru pod nadpisem */
+}
+
+footer {
+    margin-top: 100px;
+}

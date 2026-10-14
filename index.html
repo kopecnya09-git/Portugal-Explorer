@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal Explorer | Student's Guide</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS (Fáze 2) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-navbar">
+    <!-- 2. HERO SECTION -->
+    <header id="home">
+
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portugal Explorer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destinations">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="portugalCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    
+            <!-- Indikátory (tečky/čárky dole) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#portugalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Lisabon"></button>
+                <button type="button" data-bs-target="#portugalCarousel" data-bs-slide-to="1" aria-label="Porto"></button>
+                <button type="button" data-bs-target="#portugalCarousel" data-bs-slide-to="2" aria-label="Braga"></button>
+                <button type="button" data-bs-target="#portugalCarousel" data-bs-slide-to="3" aria-label="Coimbra"></button>
+                <button type="button" data-bs-target="#portugalCarousel" data-bs-slide-to="4" aria-label="Sintra"></button>
+                <button type="button" data-bs-target="#portugalCarousel" data-bs-slide-to="5" aria-label="Faro"></button>
+            </div>
+
+            <!-- Fotky a popisy -->
+            <div class="carousel-inner">
+                
+                <!-- 1. Lisabon -->
+                <div class="carousel-item active">
+                    <img src="images/dlouhylisabon.jpg" class="d-block w-100" alt="Lisabon">
+                    <div class="carousel-caption">
+                        <h3 class="fw-bold">Lisabon</h3>
+                        <p>The vibrant capital filled with historic yellow trams, iconic cobblestone streets, and breathtaking viewpoints.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Porto -->
+                <div class="carousel-item">
+                    <img src="images/dlouhyporto.jpg" class="d-block w-100" alt="Porto">
+                    <div class="carousel-caption">
+                        <h3 class="fw-bold">Porto</h3>
+                        <p>Famous city along the Douro River, known for the majestic Dom Luís I Bridge and world-renowned port wine.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Braga -->
+                <div class="carousel-item">
+                    <img src="images/dlouhybraga.jpg" class="d-block w-100" alt="Braga">
+                    <div class="carousel-caption">
+                        <h3 class="fw-bold">Braga</h3>
+                        <p>The historical and spiritual heart of Portugal, home to the breathtaking Bom Jesus do Monte sanctuary.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Coimbra -->
+                <div class="carousel-item">
+                    <img src="images/dlouhycoimbra.jpg" class="d-block w-100" alt="Coimbra">
+                    <div class="carousel-caption">
+                        <h3 class="fw-bold">Coimbra</h3>
+                        <p>A historic university town boasting one of the oldest universities in Europe and rich student traditions.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Sintra -->
+                <div class="carousel-item">
+                    <img src="images/dlouhysintra.jpg" class="d-block w-100" alt="Sintra">
+                    <div class="carousel-caption">
+                        <h3 class="fw-bold">Sintra</h3>
+                        <p>A fairytale town nestled in the hills, famous for the colorful Pena Palace and mystical gardens.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Benagil Cave -->
+                <div class="carousel-item">
+                    <img src="images/dlouhybenagil.jpg" class="d-block w-100" alt="Benagil Cave">
+                    <div class="carousel-caption">
+                        <h3 class="fw-bold">Benagil Cave</h3>
+                        <p>An iconic sea cave featuring a natural skylight dome and a hidden beach carved by the ocean.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Šipky pro posun -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#portugalCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Předchozí</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portugalCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Další</span>
+            </button>
+        </div>
+
+        <div class="cities">
+            <h2>Famous & Beautiful Cities</h2>
+
+            <div class="pictures">
+                <a href="braga.html">
+                    <img src="images/braga.jfif" alt="Braga">
+                    <h3>Braga</h3>  
+                </a>
+                <a href="lisabon.html">
+                    <img src="images/lisabon.jpg" alt="Lisabon">
+                    <h3>Lisabon</h3>
+                </a>
+                <a href="porto.html">
+                    <img src="images/porto.jpg" alt="Porto">
+                    <h3>Porto</h3>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 6. FOOTER -->
+    <footer class="footer-section bg-dark text-white pt-5">
+        <div class="container pb-4">
+            <div class="row g-4">
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-white fw-bold">Portugal Explorer</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Erasmus Project</a></li>
+                        <li><a href="#about">Mentors & Team</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-white fw-bold">Menu</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#tips">Travel Tips</a></li>
+                        <li><a href="#tips">Local Food</a></li>
+                        <li><a href="#tips">Portuguese Phrases</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-white fw-bold">Project Repository</h5>
+                    <p class="text-secondary small">
+                        Created as part of an Erasmus internship project. Check out our open-source code on GitHub.
+                    </p>
+                    <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" class="btn btn-outline-light btn-sm mt-2">
+                        <i class="bi bi-github me-2"></i>GitHub Repo
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading text-white fw-bold">Follow us</h5>
+                    <div class="d-flex gap-3 social-icons fs-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom bg-black py-3 border-top border-secondary border-opacity-25">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                
+                <p class="mb-0 text-secondary small">
+                    Copyright © 2026 Portugal Explorer. Built by Erasmus Students.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#" class="text-secondary small me-3 text-decoration-none">Privacy Policy</a>
+                    <a href="#" class="text-secondary small me-3 text-decoration-none">Cookies & Analytics</a>
+                    <a href="#" class="text-secondary small text-decoration-none">Cookie Settings</a>
+                </div>
+
+                <a href="#" class="btn btn-primary rounded-circle scroll-top-btn" title="Back to top">
+                    <i class="bi bi-chevron-up"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS (Fáze 3) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
